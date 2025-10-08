@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio - Daveeduraju</title>
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
+
+    header {
+      width: 100%;
+      height: 220px;
+      background: url('https://picsum.photos/900/220') center/cover no-repeat;
+      position: relative;
+    }
+
+    .profile-pic{
+      width: 130px;
+      height: 130px;
+      border-radius: 100%;
+      border: 4px solid #00ffff;
+      position:absolute;
+      bottom: -65px;
+      left: 30px;
+      object-fit:cover;
+    }
+
+    .intro {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    .intro h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #00ffff;
+    }
+
+    .intro p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: #161b22;
+      text-align: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #00ffff33;
+    }
+
+    nav a {
+      color: #e6edf3;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .card {
+      flex: 1 1 220px;
+      max-width: 250px;
+      background: #0f1e21;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 3px #00ffff;
+      text-align: center;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #1c252f;
+    }
+
+    .card i {
+      font-size: 2rem;
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #00ffff22;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #00ffff;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+
+    .card a:hover {
+      background: #00ffff44;
+    }
+
+    div {
+      padding: 40px;
+      background: #161b22;
+      margin: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    div:hover {
+      transform: translateY(-5px);
+      background: #1c252f;
+    }
+    
+    h2 {
+      color: #00ffff;
+      margin-bottom: 15px;
+      text-align:left;
+    }
+
+    a {
+      color: #00ffff;
+    }
+
+    footer {
+      background: #161b22;
+      color: #e6edf3;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 30px;
+      font-size: 0.9rem;
+      border-top: 2px solid #00ffff33;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="WhatsApp Image 2025-09-16 at 22.10.29_92e7ceb1.jpg"alt="profile pic" class="profile-pic" />
+  </header>
+
+  <section class="intro">
+    <h1>Daveedu Raju Mungara</h1>
+    <p>Cybersecurity Student | Web Developer | Tech Enthusiast</p>
+  </section>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div id="home">
+    <h2>Welcome!</h2>
+    <p>Hello! I'm Daveeduraju Mungara, a student pursuing B.Tech in Cybersecurity at Mohan Babu University. I love building websites, exploring ethical hacking, and working on machine learning projects.</p>
+  </div>
+
+  <div id="about">
+    <h2>About Me</h2>
+    <p>I am from Eluru, Eluru Dist. I’m passionate about full-stack web development, cybersecurity, and creating applications that make life easier. I enjoy learning new technologies and solving real-world problems with code.</p>
+  </div>
+
+  <div id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">
+        <i class="fa-brands fa-java"></i>
+        <h3>Java</h3>
+        <p>OOP, DSA, backend development, and competitive coding expertise.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-database"></i>
+        <h3>MySQL</h3>
+        <p>Efficient database design, queries, and optimization for applications.</p>
+      </div>
+      <div class="card">
+        <i class="fa-brands fa-python"></i>
+        <h3>Python</h3>
+        <p>Scripting, automation, machine learning, and quick prototyping skills.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-code"></i>
+        <h3>Frontend</h3>
+        <p>Building applications using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Cyber Security</h3>
+        <p>Understanding of ethical hacking, networking, and defensive tools.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <i class="fa-solid fa-hands"></i>
+        <h3>Sign Language Recognition</h3>
+        <p>A machine learning model deployed with Flask.</p>
+        <a href="https://github.com/daveedurajumungara8-gif/Sign-Language-Recognition" target="_blank">View Project</a>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-ticket"></i>
+        <h3>HAD - Movie Ticket Booking App</h3>
+        <p>Database application with MySQL for smooth ticket booking.</p>
+        <a href="https://github.com/harsha1134/Movie-Ticket-Booking---Sql" target="_blank">View Project</a>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-globe"></i>
+        <h3>Portfolio Website</h3>
+        <p>A professional and animated portfolio website built with HTML & CSS.</p>
+        <a href="https://github.com/daveedurajumungara8-gif/Portfolio" target="_blank">View Project</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact">
+    <h2>Contact Me</h2>
+    <p><strong>Email:</strong> daveedurajumungara8@gmail.com</p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/daveedurajumungara8-gif" target="_blank">github.com/daveedu</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/daveeduraju-mungara-3a7167344/" target="_blank">linkedin.com/in/daveedu</a></p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 daveedurajumungara. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
