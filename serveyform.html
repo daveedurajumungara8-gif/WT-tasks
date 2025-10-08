@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Survey Form</title>
+  <style>
+    body{
+        font-family:serif;
+        background-color: rgb(163, 218, 235);
+        font-size:medium;
+    }
+    h1{
+
+        text-align: center;
+    }
+    fieldset{
+        max-width: 400px;
+        margin: 50px 550px;
+        background: rgb(245, 246, 247);
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(14, 3, 3, 0.1);
+    }
+    label{
+        font-size: medium;
+    }
+  </style>
+</head>
+<body>
+  
+    <h1>Simple Survey Form</h1>
+
+    <form action="#" method="post">
+      <fieldset>
+
+        <label for="name">Full Name :</label>
+        <input type="text" id="name" name="name" required /><br>
+<br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required /><br><br>
+
+        <label for="age">Age Group :</label><br>
+        <select id="age" name="age" required>
+          <option value="">-- Select --</option><br>
+          <option value="under18">Under 18</option>
+          <option value="18-24">18–24</option>
+          <option value="25-34">25–34</option>
+          <option value="35-44">35–44</option>
+          <option value="45-54">45–54</option>
+          <option value="55-64">55–64</option>
+          <option value="65+">65+</option>
+        </select>
+        <br><br>
+
+        <label>How did you hear about us?</label><br>
+        <input type="radio" name="source" value="friends" required /> Friends/Family
+        <input type="radio" name="source" value="social" /> Social Media<br>
+        <input type="radio" name="source" value="ads" /> Ads
+        <input type="radio" name="source" value="other" /> Other
+        <br><br>
+        <label style="margin-top:10px;">What topics are you interested in?</label><br>
+        <input type="checkbox" name="topics" value="tech" /> Technology
+        <input type="checkbox" name="topics" value="sports" /> Sports<br>
+        <input type="checkbox" name="topics" value="music" /> Music
+        <input type="checkbox" name="topics" value="movies" /> Movies
+        <br><br>
+        <label for="rating">Rate your overall experience :</label><br>
+        <select id="rating" name="rating" required>
+          <option value="">-- Select --</option>
+          <option value="5">Excellent (5)</option>
+          <option value="4">Good (4)</option>
+          <option value="3">Average (3)</option>
+          <option value="2">Poor (2)</option>
+          <option value="1">Very Poor (1)</option>
+        </select>
+        <br><br>
+        <label for="comments">Additional Comments</label><br>
+        <textarea id="comments" name="comments" placeholder="Write your feedback here..." ></textarea>
+        <br><br>
+        
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Clear" />
+
+
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>

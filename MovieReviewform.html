@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Movie Review Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ecf1fa;
+        
+    }
+    fieldset{
+        max-width: 400px;
+        margin: 50px 550px;
+        background: white;
+        padding: 50px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(14, 3, 3, 0.1);
+    }
+   
+</style>
+</head>
+<body>
+<fieldset>
+<h2>🎬 Movie Review Form</h2>
+
+<form>
+    <label for="movie">Movie Name:</label>
+    <input type="text" id="movie" name="movie" placeholder="Enter Movie Name"><br>
+    <br>
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter Your Name"><br>
+     <br>
+     <label for="dname">Director Name:</label>
+    <input type="text" id="dname" name="dname" placeholder="Enter Director Name"><br>
+     <br>
+    <label for="rating">Rating:</label>
+    <select id="rating" name="rating" required>
+        <option value="">Select</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+    </select>
+<br><br>
+    <label for="poster">Upload Poster:</label>
+    <input type="file" id="poster" name="poster" accept="image/*"><br>
+    <br>
+    <label for="review">Your Review:</label><br>
+    <textarea id="review" name="review" rows="4" required></textarea><br>
+    <br>
+    <input type="submit" value="Submit Review">
+    </fieldset>
+</form>
+</body>
+</html>
